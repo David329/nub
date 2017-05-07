@@ -1,0 +1,203 @@
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#690000">
+    <meta name="msapplication-navbutton-color" content="#690000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#690000">
+    <link rel="icon" sizes="192x192" href="img/logotransparente.png">
+  <title>Crymsoft</title>
+  <script src="js/aframe.js"></script>
+</head>
+<body>
+  <script>
+(new Image(0,0)).src="images360/2.jpg";
+window.onload = function() 
+{
+  esperar(0,3);
+  async function esperar(ms,i,max) //es importante el async en esta funcion
+  {
+    await new Promise(resolve => setTimeout(resolve, ms));
+    (new Image(0,0)).src="images360/"+i.toString()+".jpg";
+    if(i===15)return;
+    esperar(1300,++i);
+  }
+};
+</script>
+<a-scene>
+  <a-camera position="0 0 0" rotation="0 90 0">
+    <a-cursor color="#4CC3D9" fuse="true"></a-cursor>
+  </a-camera>
+  <!--1ra-->
+  <a-circle class="hover" imagen=1.2 material="transparent: true" position="-10 -2.6 5" rotation="0 110 0" visible="true" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <!--2da-->
+  <a-circle class="hover" imagen=2.1 material="transparent: true" position="8 -1.6 7" rotation="0 220 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=2.2 material="transparent: true" position="-1.9 -2.6 8.5" rotation="0 170 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <!--3ra-->
+  <a-circle class="hover" imagen=3.1 material="transparent: true" position="9 -2.6 2" rotation="0 270 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=3.2 material="transparent: true" position="-7 -2.6 -2" rotation="0 60 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <!--4ta-->
+  <a-circle class="hover" imagen=4.1 material="transparent: true" position="9 -2.6 -2" rotation="0 270 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=4.2 material="transparent: true" position="-7 -2.6 8" rotation="0 -230 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=4.3 material="transparent: true" position="1 -3 -7" rotation="0 -10 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <!--5ta-->
+  <a-circle class="hover" imagen=5.1 material="transparent: true" position="-9 -2.6 -3.6" rotation="0 -290 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=5.2 material="transparent: true" position="9 -2.6 -1" rotation="0 -440 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <!--6ta-->
+  <a-circle class="hover" imagen=6.1 material="transparent: true" position="-9 -2.6 -3.6" rotation="0 -290 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=6.2 material="transparent: true" position="10 -2.6 4" rotation="0 240 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <!--7ta-->
+  <a-circle class="hover" imagen=7.1 material="transparent: true" position="11 -3 4" rotation="0 -110 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=7.2 material="transparent: true" position="-7 -4 -5" rotation="0 40 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <!--8va-->
+  <a-circle class="hover" imagen=8.1 material="transparent: true" position="-9 -3.6 -0.5" rotation="0 450 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=8.2 material="transparent: true" position="8 -4 -1" rotation="0 280 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <!--9na-->
+  <a-circle class="hover" imagen=9.1 material="transparent: true" position="8 -4 3" rotation="0 270 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=9.2 material="transparent: true" position="-10 -3.6 0" rotation="0 90 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <!--10ma-->
+  <a-circle class="hover" imagen=10.1 material="transparent: true" position="-9 -3.6 -2" rotation="0 -290 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=10.2 material="transparent: true" position="8 -4 -1" rotation="0 280 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <!--11va-->
+  <a-circle class="hover" imagen=11.1 material="transparent: true" position="9 -3 1" rotation="0 -90 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=11.2 material="transparent: true" position="-5 -3 -9" rotation="0 10 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <!--12va-->
+  <a-circle class="hover" imagen=12.1 material="transparent: true" position="-10 -3 1" rotation="0 90 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=12.2 material="transparent: true" position="10 -3 2" rotation="0 -90 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <!--13va-->
+  <a-circle class="hover" imagen=13.1 material="transparent: true" position="5 -2 7" rotation="0 220 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=13.2 material="transparent: true" position="6.5 -2.6 -7" rotation="0 -400 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <!--14va-->
+  <a-circle class="hover" imagen=14.1 material="transparent: true" position="-8 -3.5 -4" rotation="0 40 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=14.2 material="transparent: true" position="8 -3.5 2" rotation="0 -110 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <!--15va-->
+  <a-circle class="hover" imagen=15.1 material="transparent: true" position="-7 -3 2" rotation="0 -250 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-circle class="hover" imagen=15.3 material="transparent: true" position="6 -3.5 -1" rotation="0 -50 0" visible="false" src="https://cdn3.iconfinder.com/data/icons/user-interface-13/32/604-128.png">
+  </a-circle>
+  <a-sky src="images360/1.jpg" material="opacity: 1"></a-sky>
+</a-scene>
+<script>
+var sceneEl = document.querySelector('a-scene');
+var hoverEls = sceneEl.querySelectorAll('.hover');
+var hotSpots=document.getElementsByTagName("a-circle");
+var cielo=document.getElementsByTagName("a-sky")[0];
+var contador=0;
+
+for(var i = 0; i < hoverEls.length; i++) {
+    var hoverEl = hoverEls[i];
+    hoverEl.addEventListener('raycaster-intersected', function(evt) {
+        contador++;
+        if(contador==1){evt.target.setAttribute('scale','1.1 1.1 1.1');cielo.setAttribute("material","opacity",0.96);}
+        else if(contador==3){evt.target.setAttribute('scale','1.3 1.3 1.3');cielo.setAttribute("material","opacity",0.92);}
+        else if(contador==5){evt.target.setAttribute('scale','1.5 1.5 1.5');cielo.setAttribute("material","opacity",0.90);}
+        else if(contador==7){evt.target.setAttribute('scale','1.7 1.7 1.7');cielo.setAttribute("material","opacity",0.86);}
+        else if(contador==9){evt.target.setAttribute('scale','1.9 1.9 1.9');cielo.setAttribute("material","opacity",0.82);}
+        else if(contador==11){evt.target.setAttribute('scale','2.1 2.1 2.1');cielo.setAttribute("material","opacity",0.78);}
+        else if(contador==13){evt.target.setAttribute('scale','2.3 2.3 2.3');cielo.setAttribute("material","opacity",0.74);}
+        else if(contador==15)
+        {evt.target.setAttribute('scale','2.5 2.5 2.5');
+        var rotcamara=document.getElementsByTagName("a-camera")[0].getAttribute('rotation');
+        rotcamara['z']=0;
+        document.getElementsByTagName("a-camera")[0].setAttribute('rotation', rotcamara);
+        cielo.setAttribute("material","opacity",0.7);
+        david(evt.target);
+        }
+    }, true);
+    hoverEl.addEventListener('raycaster-intersected-cleared', function(evt) {
+      cielo.setAttribute("material","opacity",1);
+      contador=0;
+      evt.target.setAttribute('src','');
+      evt.target.setAttribute('scale','1.0 1.0 1.0');
+    }, true);
+}
+</script>
+<script>
+  function david(data)
+  {
+    if(data.getAttribute('imagen')==="1.2") cielo.setAttribute('src','images360/2.jpg');
+    else if(data.getAttribute('imagen')==="2.1")cielo.setAttribute('src','images360/1.jpg');
+    else if(data.getAttribute('imagen')==="2.2")cielo.setAttribute('src','images360/3.jpg');
+    else if(data.getAttribute('imagen')==="3.1")cielo.setAttribute('src','images360/2.jpg');
+    else if(data.getAttribute('imagen')==="3.2")cielo.setAttribute('src','images360/4.jpg');
+    else if(data.getAttribute('imagen')==="4.1")cielo.setAttribute('src','images360/3.jpg');
+    else if(data.getAttribute('imagen')==="4.2")cielo.setAttribute('src','images360/5.jpg');
+    else if(data.getAttribute('imagen')==="4.3")cielo.setAttribute('src','images360/15.jpg');
+    else if(data.getAttribute('imagen')==="5.1")cielo.setAttribute('src','images360/4.jpg');
+    else if(data.getAttribute('imagen')==="5.2")cielo.setAttribute('src','images360/6.jpg');
+    else if(data.getAttribute('imagen')==="6.1")cielo.setAttribute('src','images360/5.jpg');
+    else if(data.getAttribute('imagen')==="6.2")cielo.setAttribute('src','images360/7.jpg');
+    else if(data.getAttribute('imagen')==="7.1")cielo.setAttribute('src','images360/6.jpg');
+    else if(data.getAttribute('imagen')==="7.2")cielo.setAttribute('src','images360/8.jpg');
+    else if(data.getAttribute('imagen')==="8.1")cielo.setAttribute('src','images360/7.jpg');
+    else if(data.getAttribute('imagen')==="8.2")cielo.setAttribute('src','images360/9.jpg');
+    else if(data.getAttribute('imagen')==="9.1")cielo.setAttribute('src','images360/8.jpg');
+    else if(data.getAttribute('imagen')==="9.2")cielo.setAttribute('src','images360/10.jpg');
+    else if(data.getAttribute('imagen')==="10.1")cielo.setAttribute('src','images360/9.jpg');
+    else if(data.getAttribute('imagen')==="10.2")cielo.setAttribute('src','images360/11.jpg');
+    else if(data.getAttribute('imagen')==="11.1")cielo.setAttribute('src','images360/10.jpg');
+    else if(data.getAttribute('imagen')==="11.2")cielo.setAttribute('src','images360/12.jpg');
+    else if(data.getAttribute('imagen')==="12.1")cielo.setAttribute('src','images360/11.jpg');
+    else if(data.getAttribute('imagen')==="12.2")cielo.setAttribute('src','images360/13.jpg');
+    else if(data.getAttribute('imagen')==="13.1")cielo.setAttribute('src','images360/12.jpg');
+    else if(data.getAttribute('imagen')==="13.2")cielo.setAttribute('src','images360/14.jpg');
+    else if(data.getAttribute('imagen')==="14.1")cielo.setAttribute('src','images360/13.jpg');
+    else if(data.getAttribute('imagen')==="14.2")cielo.setAttribute('src','images360/15.jpg');
+    else if(data.getAttribute('imagen')==="15.1")cielo.setAttribute('src','images360/14.jpg');
+    else if(data.getAttribute('imagen')==="15.3")cielo.setAttribute('src','images360/4.jpg');
+    for(var i=0;i<hotSpots.length;i++)
+    {
+      hotSpots[i].setAttribute('visible',"false");
+      if(data.getAttribute('imagen').split(".")[1]==="1"){
+        if(parseInt(hotSpots[i].getAttribute('imagen'))===parseInt(data.getAttribute('imagen'))-1)
+        hotSpots[i].setAttribute('visible',"true");
+      }
+      else if(data.getAttribute('imagen').split(".")[1]==="2"){
+      if(parseInt(hotSpots[i].getAttribute('imagen'))===parseInt(data.getAttribute('imagen'))+1)
+        hotSpots[i].setAttribute('visible',"true");
+      }
+    }
+    //especiales
+    if(data.getAttribute('imagen')==="4.3"){
+      hotSpots[28].setAttribute('visible',"true");//los hotspots15
+      hotSpots[29].setAttribute('visible',"true");
+    }
+    else if(data.getAttribute('imagen')==="15.3"){
+      hotSpots[5].setAttribute('visible',"true");//los hotspots4
+      hotSpots[6].setAttribute('visible',"true");
+      hotSpots[7].setAttribute('visible',"true");
+    }
+  }
+</script>
+</body>
+</html>

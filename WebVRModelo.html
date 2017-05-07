@@ -1,0 +1,49 @@
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#690000">
+    <meta name="msapplication-navbutton-color" content="#690000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#690000">
+    <link rel="icon" sizes="192x192" href="img/logotransparente.png">
+  <title>Crymsoft</title>
+  <script src="js/aframe.js"></script>
+</head>
+<body>
+  <script>
+        AFRAME.registerComponent('collider-check', {
+            init: function () {
+                var el = this.el;
+                var contador=0;
+                var posicion="0 0 0";
+                el.addEventListener('raycaster-intersected', function (evt) {
+                    contador++;
+                    if(contador===1)posicion=document.getElementById("camara").getAttribute("position");
+                    if(contador>1){
+                        document.getElementById("camara").setAttribute("position",posicion);
+                    }
+                });
+                el.addEventListener('raycaster-intersected-cleared', function (evt) {
+                    contador=0;
+                });
+            }
+        });
+    </script>
+<a-scene>
+  <a-entity>
+    <a-camera id="camara" wasd-controls>
+      <a-cursor raycaster="objects: .donlusho" color="#4CC3D9"></a-cursor>
+      <a-entity position="0.02 0 3" raycaster="far: 3.8;objects: .collidable"></a-entity>
+      <a-entity position="-0.02 0 3" raycaster="far: 3.8;objects: .collidable"></a-entity>
+    </a-camera>
+  </a-entity>
+  <a-assets>
+    <a-asset-item id="crate-obj" src="models/aztec-temple.obj"></a-asset-item>
+    <a-asset-item id="crate-mtl" src="models/aztec-temple.mtl"></a-asset-item>
+  </a-assets>
+  <a-obj-model class="collidable" collider-check src="#crate-obj" mtl="#crate-mtl"></a-obj-model>
+</a-scene>
+</body>
+</html>
