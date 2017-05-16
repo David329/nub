@@ -10,6 +10,46 @@
     <link rel="icon" sizes="192x192" href="img/logotransparente.png">
     <link href="css/todo.css" rel="stylesheet">
 </head>
+<style>
+    li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #F5F6CE;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
 <body id="home">
     <div id="preloader">
         <div id="status"></div>
@@ -34,11 +74,19 @@
             </div>
             <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-
                     <li class="menuItem"><a href="#whatis">¿Por qué?</a></li>
                     <li class="menuItem"><a href="#useit">R. Virtual</a></li>
                     <li class="menuItem"><a href="#screen">R. Aumentada</a></li>
-                    <li class="menuItem"><a href="#credits">VideoJuegos</a></li>
+                    <li class="menuItem"><a href="#credits">Productos</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                        <div class="dropdown-content">
+                        <a href="#whatis">App</a>
+                        <a href="#whatis">POWER BI</a>
+                        <a href="#whatis">PROGRAMA A MEDIDA</a>
+                        <a href="#whatis">PROGRAMA EN TIENDA</a>
+                        </div>
+                    </li>
                     <li class="menuItem"><img src="img/telefono.png" height="55" weight="55"/></li>
                     <li class="menuItem"><a style="font-size: 35px;" href="#contacto">969651835</a></li>
                 </ul>
@@ -48,7 +96,7 @@
     <div id="whatis" class="content-section-b" style="border-top: 0">
         <div class="container">
             <div class="col-md-6 col-md-offset-3 text-center wrap_title">
-                <h2>¿Por qué Crymsoft?</h2>
+                <h2>¿Por qué Neowisse?</h2>
                 <p class="lead" style="margin-top:0">Nuestros 6 principales valores</p>
             </div>
             <div class="row">
@@ -237,7 +285,7 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center wrap_title">
                     <h2>Contáctanos</h2>
-                    <p class="lead" style="margin-top:0">Toma la mejor decisión.</p>
+                    <p class="lead" style="margin-top:0">Estamos listos para iniciar contigo el siguiente proyecto.</p>
                 </div>
                 <div class="col-md-6">
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe9k3hgawgDqBVE8w1B7Xzy6KwmmwWJapYsoYhLC93WOkEcjw/viewform?embedded=true" width="650" scrolling="no" height="790" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
@@ -254,7 +302,7 @@
                     </address>
                     <h3>Dirección</h3>
                     <li class="social">
-                        <a href="">Av. Universitaria 1951 San Miguel, Lima – Perú (Previa cita, Motivo: Mudanza)</a>
+                        <a href="">Av. Universitaria 1951 San Miguel, Lima – Perú.</a>
                     </li>
                 </div>
             </div>
